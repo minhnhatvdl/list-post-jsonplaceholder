@@ -1,5 +1,6 @@
 import React from "react";
 import ListPost from "../ListPost/ListPost";
+import PostDetail from "../PostDetail/PostDetail";
 
 const App = () => {
   return (
@@ -9,7 +10,9 @@ const App = () => {
         <div className="eight wide column">
           <ListPost />
         </div>
-        <div className="eight wide column" />
+        <div className="eight wide column">
+          <PostDetail />
+        </div>
       </div>
     </div>
   );

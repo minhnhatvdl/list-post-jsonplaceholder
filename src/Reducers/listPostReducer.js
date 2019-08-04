@@ -1,6 +1,8 @@
 export const listPostReducer = (listPost = [], action) => {
-  if (action.type === "GET_LIST_POST") {
-    return action.payload.listPost.data;
+  switch (action.type) {
+    case "GET_LIST_POST":
+      return action.payload.listPost.data;
+    default:
+      return listPost;
   }
-  return listPost;
 };
